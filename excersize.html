@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+</head>
+<body>
+    <div id = "root"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script  src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+    <script type ="text/babel">
+    //Write your code below this line
+
+
+    // const list = React.createElement('ul',{},'list of items')
+    // const li1 = React.createElement('li', {}, 'cooking')
+    // const li2 = React.createElement('li', {}, 'cleaning')
+    // const li3 = React.createElement('li', {}, 'washing')
+    // const elem = React.createElement('h1',{},'To do List', li1,li2,li3)
+
+
+    const app = document.getElementById('root')
+
+    const user = {
+        name : "prakash",
+        school : "conestoga"
+    }
+    
+    function userName(user){
+        if(user){
+            return <h1>Hello, {user.name}</h1>
+        }
+        else{
+            return <h1>Hello, stranger </h1>
+        }
+    }
+    const elem = userName(user)
+
+    ReactDOM.render(elem,app)
+
+    </script>
+</body>
+</html>
